@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funky Meme Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+            font-family: 'Permanent Marker', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffebcd, #fdf3e7);
+            color: #333;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #ff4500;
+            color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header .subtitle {
+            font-size: 1.5rem;
+            margin-top: 5px;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background: #ffa07a;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 5px 15px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #ff4500;
+            border-radius: 5px;
+        }
+
+        /* Meme Gallery Styles */
+        .meme-gallery {
+            padding: 20px;
+        }
+
+        .meme-gallery h2 {
+            font-size: 2.5rem;
+            color: #ff4500;
+            margin-bottom: 20px;
+        }
+
+        .meme {
+            display: inline-block;
+            width: 300px;
+            margin: 15px;
+            border: 5px solid #ff4500;
+            border-radius: 15px;
+            background-color: #fff;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .meme img {
+            width: 100%;
+            height: auto;
+        }
+
+        .meme .caption {
+            padding: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ff4500;
+        }
+
+        /* Hover Effect */
+        .meme:hover {
+            transform: scale(1.1);
+        }
+
+        /* About and Contact Styles */
+        #about, #contact {
+            padding: 20px;
+            background: #fff;
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #about h2, #contact h2 {
+            font-size: 2rem;
+            color: #ff4500;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea, form button {
+            width: 90%;
+            padding: 10px;
+            margin: 10px auto;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background: #ff4500;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        form button:hover {
+            background: #e63900;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #ff4500;
+            color: #fff;
+            padding: 15px;
+        }
+
+        footer .social-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Funky Meme Zone</h1>
+        <p class="subtitle">Where the laughter never stops!</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="gallery" class="meme-gallery">
+            <h2>Trending Memes</h2>
+            <div class="meme">
+                
+                <img src="img/WhatsApp Image 2025-01-21 at 15.52.59_5498c2c4.jpg" alt="Meme 1">
+                <p class="caption">When Monday hits you like...</p>
+            </div>
+            <div class="meme">
+                <img src="img/WhatsApp Image 2025-01-21 at 15.52.07_79c8b532.jpg" alt="Meme 2">
+                <p class="caption">Me waiting for Friday...</p>
+            </div>
+            <div class="meme">
+                <img src="img/WhatsApp Image 2025-01-21 at 15.56.40_393079df.jpg" alt="Meme 3">
+                <p class="caption">That moment you realize it's only Wednesday!</p>
+            </div>
+            <div class="meme">
+                
+                <img src="img/WhatsApp Image 2025-01-21 at 15.52.59_5498c2c4.jpg" alt="Meme 1">
+                <p class="caption">When Monday hits you like...</p>
+            </div>
+            <div class="meme">
+                <img src="img/WhatsApp Image 2025-01-21 at 15.52.07_79c8b532.jpg" alt="Meme 2">
+                <p class="caption">Me waiting for Friday...</p>
+            </div>
+            <div class="meme">
+                <img src="img/WhatsApp Image 2025-01-21 at 15.56.40_393079df.jpg" alt="Meme 3">
+                <p class="caption">That moment you realize it's only Wednesday!</p>
+            </div>
+            <div class="meme">
+                
+                <img src="img/WhatsApp Image 2025-01-21 at 15.52.59_5498c2c4.jpg" alt="Meme 1">
+                <p class="caption">When Monday hits you like...</p>
+            </div>
+            <div class="meme">
+                <img src="img/WhatsApp Image 2025-01-21 at 15.52.07_79c8b532.jpg" alt="Meme 2">
+                <p class="caption">Me waiting for Friday...</p>
+            </div>
+            <div class="meme">
+                <img src="img/WhatsApp Image 2025-01-21 at 15.56.40_393079df.jpg" alt="Meme 3">
+                <p class="caption">That moment you realize it's only Wednesday!</p>
+            </div>
+            <div class="meme">
+                
+                <img src="img/WhatsApp Image 2025-01-21 at 15.52.59_5498c2c4.jpg" alt="Meme 1">
+                <p class="caption">When Monday hits you like...</p>
+            </div>
+            <div class="meme">
+                <img src="img/WhatsApp Image 2025-01-21 at 15.52.07_79c8b532.jpg" alt="Meme 2">
+                <p class="caption">Me waiting for Friday...</p>
+            </div>
+            <div class="meme">
+                <img src="img/WhatsApp Image 2025-01-21 at 15.56.40_393079df.jpg" alt="Meme 3">
+                <p class="caption">That moment you realize it's only Wednesday!</p>
+            </div>
+            <div class="meme">
+                
+                <img src="img/WhatsApp Image 2025-01-21 at 15.52.59_5498c2c4.jpg" alt="Meme 1">
+                <p class="caption">When Monday hits you like...</p>
+            </div>
+            <div class="meme">
+                <img src="img/WhatsApp Image 2025-01-21 at 15.52.07_79c8b532.jpg" alt="Meme 2">
+                <p class="caption">Me waiting for Friday...</p>
+            </div>
+            <div class="meme">
+                <img src="img/WhatsApp Image 2025-01-21 at 15.56.40_393079df.jpg" alt="Meme 3">
+                <p class="caption">That moment you realize it's only Wednesday!</p>
+            </div>
+        </section>
+        <section id="about">
+            <div id="about">
+                <h2>About Us</h2>
+                <p>Welcome to Funky Meme Zone, the ultimate destination for meme lovers! Share your funny memes and enjoy a gallery full of laughter. Let's spread joy one meme at a time!</p>
+            </div>
+        </section>
+        <section id="contact">
+            <div id="contact">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Funky Meme Zone. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
+
